@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="gradientPrimary">
+            <stop stop-color="#3a7bd5" offset="0%"></stop>
+            <stop stop-color="#00d2ff" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="gradientGood">
+            <stop stop-color="#00e400" offset="0%"></stop>
+            <stop stop-color="#00c400" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="gradientModerate">
+            <stop stop-color="#ffff00" offset="0%"></stop>
+            <stop stop-color="#ffd700" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="gradientSensitive">
+            <stop stop-color="#ff7e00" offset="0%"></stop>
+            <stop stop-color="#ff6000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="gradientUnhealthy">
+            <stop stop-color="#ff0000" offset="0%"></stop>
+            <stop stop-color="#d00000" offset="100%"></stop>
+        </linearGradient>
+        <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+            <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="rgba(0,0,0,0.3)"/>
+        </filter>
+    </defs>
+    
+    <!-- Background -->
+    <rect x="0" y="0" width="200" height="200" fill="#f8f9fa" rx="10" ry="10"></rect>
+    
+    <!-- Graph Paper Effect -->
+    <g stroke="rgba(200,200,200,0.5)" stroke-width="0.5">
+        <!-- Vertical lines -->
+        <line x1="20" y1="20" x2="20" y2="160"></line>
+        <line x1="40" y1="20" x2="40" y2="160"></line>
+        <line x1="60" y1="20" x2="60" y2="160"></line>
+        <line x1="80" y1="20" x2="80" y2="160"></line>
+        <line x1="100" y1="20" x2="100" y2="160"></line>
+        <line x1="120" y1="20" x2="120" y2="160"></line>
+        <line x1="140" y1="20" x2="140" y2="160"></line>
+        <line x1="160" y1="20" x2="160" y2="160"></line>
+        <line x1="180" y1="20" x2="180" y2="160"></line>
+        
+        <!-- Horizontal lines -->
+        <line x1="20" y1="20" x2="180" y2="20"></line>
+        <line x1="20" y1="40" x2="180" y2="40"></line>
+        <line x1="20" y1="60" x2="180" y2="60"></line>
+        <line x1="20" y1="80" x2="180" y2="80"></line>
+        <line x1="20" y1="100" x2="180" y2="100"></line>
+        <line x1="20" y1="120" x2="180" y2="120"></line>
+        <line x1="20" y1="140" x2="180" y2="140"></line>
+        <line x1="20" y1="160" x2="180" y2="160"></line>
+    </g>
+    
+    <!-- Axes -->
+    <g stroke="#333" stroke-width="2">
+        <line x1="20" y1="160" x2="180" y2="160"></line>
+        <line x1="20" y1="160" x2="20" y2="20"></line>
+    </g>
+    
+    <!-- Forecast Cards -->
+    <g filter="url(#shadow)">
+        <!-- Good Day -->
+        <rect x="30" y="60" width="25" height="80" rx="5" ry="5" fill="url(#gradientGood)"></rect>
+        <text x="42.5" y="150" font-family="Arial" font-size="8" fill="#333" text-anchor="middle">Mon</text>
+        
+        <!-- Moderate Day -->
+        <rect x="65" y="80" width="25" height="60" rx="5" ry="5" fill="url(#gradientModerate)"></rect>
+        <text x="77.5" y="150" font-family="Arial" font-size="8" fill="#333" text-anchor="middle">Tue</text>
+        
+        <!-- Sensitive Day -->
+        <rect x="100" y="40" width="25" height="100" rx="5" ry="5" fill="url(#gradientSensitive)"></rect>
+        <text x="112.5" y="150" font-family="Arial" font-size="8" fill="#333" text-anchor="middle">Wed</text>
+        
+        <!-- Unhealthy Day -->
+        <rect x="135" y="30" width="25" height="110" rx="5" ry="5" fill="url(#gradientUnhealthy)"></rect>
+        <text x="147.5" y="150" font-family="Arial" font-size="8" fill="#333" text-anchor="middle">Thu</text>
+    </g>
+    
+    <!-- Weather Icons -->
+    <g>
+        <!-- Sun -->
+        <circle cx="42.5" cy="40" r="8" fill="#FFD700" filter="url(#shadow)"></circle>
+        <g stroke="#FFD700" stroke-width="2">
+            <line x1="42.5" y1="28" x2="42.5" y2="24"></line>
+            <line x1="42.5" y1="56" x2="42.5" y2="52"></line>
+            <line x1="30.5" y1="40" x2="26.5" y2="40"></line>
+            <line x1="58.5" y1="40" x2="54.5" y2="40"></line>
+            <line x1="34.5" y1="32" x2="31.5" y2="29"></line>
+            <line x1="53.5" y1="51" x2="50.5" y2="48"></line>
+            <line x1="34.5" y1="48" x2="31.5" y2="51"></line>
+            <line x1="53.5" y1="29" x2="50.5" y2="32"></line>
+        </g>
+        
+        <!-- Cloud -->
+        <path d="M77.5,45 Q82,35 92,40 Q97,30 107,35 Q115,30 115,40 Q125,40 120,50 Q125,55 115,55 L85,55 Q75,55 77.5,45 Z" fill="white" stroke="#DDD" stroke-width="1" filter="url(#shadow)"></path>
+        
+        <!-- Rain -->
+        <path d="M107.5,38 Q112,28 122,33 Q127,23 137,28 Q145,23 145,33 Q155,33 150,43 Q155,48 145,48 L115,48 Q105,48 107.5,38 Z" fill="white" stroke="#DDD" stroke-width="1" filter="url(#shadow)"></path>
+        <g stroke="#3a7bd5" stroke-width="1.5" stroke-linecap="round">
+            <line x1="115" y1="53" x2="113" y2="58"></line>
+            <line x1="122" y1="53" x2="120" y2="58"></line>
+            <line x1="129" y1="53" x2="127" y2="58"></line>
+            <line x1="136" y1="53" x2="134" y2="58"></line>
+            <line x1="143" y1="53" x2="141" y2="58"></line>
+            <line x1="118" y1="60" x2="116" y2="65"></line>
+            <line x1="125" y1="60" x2="123" y2="65"></line>
+            <line x1="132" y1="60" x2="130" y2="65"></line>
+            <line x1="139" y1="60" x2="137" y2="65"></line>
+        </g>
+    </g>
+    
+    <!-- Title and Elements -->
+    <text x="100" y="180" font-family="Arial" font-size="12" font-weight="bold" fill="#3a7bd5" text-anchor="middle">7-Day AQI Forecast</text>
+    <text x="100" y="193" font-family="Arial" font-size="8" fill="#666" text-anchor="middle">Predictive air quality trends</text>
+    
+    <!-- Y-axis Label -->
+    <text x="15" y="90" font-family="Arial" font-size="10" fill="#666" text-anchor="middle" transform="rotate(-90, 15, 90)">AQI Level</text>
+    
+    <!-- X-axis Label -->
+    <text x="100" y="170" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">Day of Week</text>
+</svg>
